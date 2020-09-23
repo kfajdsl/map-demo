@@ -5,10 +5,6 @@ import USAMap from "react-usa-map";
 function App() {
   const [mapConfig, setMapConfig] = useState({});
 
-  // next click event should reset map
-  const [mapReset, setMapReset] = useState(false);
-  
-
   const mapHandler = (event) => {
     const state = event.target.dataset.name;
     console.log("Clicked on " + state);
