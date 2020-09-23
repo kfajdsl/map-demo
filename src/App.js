@@ -11,11 +11,11 @@ function App() {
 
   const mapHandler = (event) => {
     const state = event.target.dataset.name;
+    console.log("Clicked on " + state);
 
-    const config = {}
+    const config = {};
     config[state] = { fill: "navy" };
 
-    console.log(config);
     setMapConfig(config);
   };
 
